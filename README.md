@@ -1,6 +1,6 @@
 # Mudd Amateur Rocketry Club
 
-SpaceX-inspired redesign of the MARC club website — cinematic full-bleed photography, industrial typography, and a pure black canvas.
+SpaceX-inspired redesign of the MARC club website
 
 ## Content source
 
