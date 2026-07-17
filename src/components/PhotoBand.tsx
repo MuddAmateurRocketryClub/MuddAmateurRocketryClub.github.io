@@ -40,6 +40,7 @@ export default function PhotoBand({
             playsInline
             poster={poster || image}
             aria-label={alt}
+            style={objectPosition ? { objectPosition } : undefined}
           >
             <source src={video} type="video/mp4" />
           </video>

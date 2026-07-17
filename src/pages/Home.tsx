@@ -11,6 +11,7 @@ export default function Home() {
         title="MARC"
         subtitle="Harvey Mudd’s student rocketry team — design, build, and launch."
         cta={{ to: '/about', label: 'About' }}
+        objectPosition="center 28%"
       />
 
       <PhotoBand
