@@ -12,8 +12,10 @@ Migrated from the existing Wix site: [charlottewong328.wixsite.com/my-site-1](ht
 
 ## Run locally
 
+Requires Node.js 20.19.0 or newer.
+
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 

@@ -6,6 +6,21 @@ export default function Contact() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    const form = new FormData(e.currentTarget)
+    const firstName = String(form.get('firstName') || '').trim()
+    const lastName = String(form.get('lastName') || '').trim()
+    const email = String(form.get('email') || '').trim()
+    const message = String(form.get('message') || '').trim()
+    const body = [
+      `Name: ${firstName} ${lastName}`.trim(),
+      `Email: ${email}`,
+      '',
+      message,
+    ].join('\n')
+
+    window.location.href = `mailto:marc-leadership-l@gmail.com?subject=${encodeURIComponent(
+      'MARC website contact',
+    )}&body=${encodeURIComponent(body)}`
     setSent(true)
   }
 
@@ -55,7 +70,11 @@ export default function Contact() {
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message" required />
               </div>
-              <button type="submit" className="ghost-btn" style={{ alignSelf: 'flex-start' }}>
+              <button
+                type="submit"
+                className="ghost-btn"
+                style={{ alignSelf: 'flex-start' }}
+              >
                 Send
                 <span className="arrow" aria-hidden="true">
                   →
@@ -63,7 +82,7 @@ export default function Contact() {
               </button>
               {sent && (
                 <p className="form-success" role="status">
-                  Thanks for submitting! We’ll be in touch.
+                  Opening your email client to send this message.
                 </p>
               )}
             </form>
