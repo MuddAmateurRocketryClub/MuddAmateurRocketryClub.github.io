@@ -44,7 +44,6 @@ const leadership = [
   { name: 'Charlotte Wong', role: 'Associate Structures & HPR Lead' },
   { name: 'Luke Pratt', role: 'Associate Structures Lead' },
   { name: 'Ava Cheng', role: 'Associate Recovery & Avionics Lead' },
-  { name: 'Lyla Brown', role: 'Safety Officer' },
   { name: 'Lauren Fuller', role: 'HPR Lead' },
   { name: 'Zach Tan', role: 'HPR Lead' },
 ]
