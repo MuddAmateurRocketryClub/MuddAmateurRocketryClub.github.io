@@ -340,6 +340,7 @@ ol {
   align-items: center;
   justify-content: space-between;
   padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+  padding-top: env(safe-area-inset-top, 0);
   background: transparent;
   transition: background 0.4s var(--ease-out);
 }
@@ -390,48 +391,73 @@ ol {
 
 .nav__toggle {
   display: none;
-  width: 28px;
-  height: 20px;
-  position: relative;
+  align-items: center;
+  gap: 0.6rem;
   z-index: 101;
+  min-height: 44px;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--ghost-border);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: var(--spectral);
+  backdrop-filter: blur(8px);
 }
 
-.nav__toggle span {
+.nav__toggle-bars {
+  position: relative;
+  width: 18px;
+  height: 14px;
+  display: block;
+}
+
+.nav__toggle-bars span {
   position: absolute;
   left: 0;
   right: 0;
-  height: 1.5px;
+  height: 2px;
   background: var(--spectral);
   transition: transform 0.3s var(--ease-out), opacity 0.3s;
 }
 
-.nav__toggle span:nth-child(1) {
+.nav__toggle-bars span:nth-child(1) {
   top: 0;
 }
-.nav__toggle span:nth-child(2) {
+.nav__toggle-bars span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-.nav__toggle span:nth-child(3) {
+.nav__toggle-bars span:nth-child(3) {
   bottom: 0;
 }
 
-.nav__toggle.open span:nth-child(1) {
+.nav__toggle.open .nav__toggle-bars span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
-.nav__toggle.open span:nth-child(2) {
+.nav__toggle.open .nav__toggle-bars span:nth-child(2) {
   opacity: 0;
 }
-.nav__toggle.open span:nth-child(3) {
+.nav__toggle.open .nav__toggle-bars span:nth-child(3) {
   bottom: auto;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
 }
 
+.nav__toggle-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 860px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(10px);
+  }
+
   .nav__toggle {
-    display: block;
+    display: inline-flex;
   }
 
   .nav__links {
@@ -439,8 +465,10 @@ ol {
     inset: 0;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    background: rgba(0, 0, 0, 0.96);
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: calc(var(--nav-height) + 2rem) 1.5rem 2rem;
+    background: rgba(0, 0, 0, 0.97);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s var(--ease-out);
@@ -452,8 +480,45 @@ ol {
   }
 
   .nav__links a {
-    font-size: 1rem;
+    display: block;
+    font-size: 1.15rem;
     letter-spacing: 0.14em;
+    text-align: center;
+    padding: 1rem 1.25rem;
+    min-height: 48px;
+    border-bottom: 1px solid var(--hairline);
+    opacity: 1;
+  }
+
+  .nav__links a:last-child {
+    border-bottom: none;
+  }
+
+  .ghost-btn {
+    min-height: 48px;
+    padding: 1rem 1.5rem;
+    background: rgba(240, 240, 250, 0.18);
+    border-color: rgba(240, 240, 250, 0.65);
+  }
+
+  .photo-band__content {
+    padding-bottom: max(4.5rem, calc(2rem + env(safe-area-inset-bottom, 0px)));
+  }
+
+  .photo-band__shade {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.45) 50%,
+      rgba(0, 0, 0, 0.35) 100%
+    );
+  }
+
+  .footer__links a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0;
   }
 }
 

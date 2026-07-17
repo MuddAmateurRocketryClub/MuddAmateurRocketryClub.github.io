@@ -10,7 +10,7 @@ export default function Home() {
         brand="Mudd Amateur Rocketry Club"
         title="MARC"
         subtitle="Harvey Mudd’s student rocketry team — design, build, and launch."
-        cta={{ to: '/about', label: 'Learn more' }}
+        cta={{ to: '/about', label: 'About' }}
       />
 
       <PhotoBand

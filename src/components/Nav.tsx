@@ -37,16 +37,25 @@ export default function Nav() {
 
       <button
         className={`nav__toggle${open ? ' open' : ''}`}
+        type="button"
         aria-label={open ? 'Close menu' : 'Open menu'}
         aria-expanded={open}
+        aria-controls="primary-nav"
         onClick={() => setOpen((v) => !v)}
       >
-        <span />
-        <span />
-        <span />
+        <span className="nav__toggle-bars" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </span>
+        <span className="nav__toggle-label">{open ? 'Close' : 'Menu'}</span>
       </button>
 
-      <nav className={`nav__links${open ? ' open' : ''}`} aria-label="Primary">
+      <nav
+        id="primary-nav"
+        className={`nav__links${open ? ' open' : ''}`}
+        aria-label="Primary"
+      >
         {links.map((link) => (
           <NavLink
             key={link.to}
