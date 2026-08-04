@@ -226,6 +226,11 @@ ol {
   transform: none;
 }
 
+/* Crop the launch telemetry overlay out of wider desktop viewports. */
+.photo-band.home-launch-video .photo-band__media video {
+  transform: scale(1.08) translateY(-8%);
+}
+
 .photo-band__shade {
   position: absolute;
   inset: 0;
@@ -503,6 +508,10 @@ ol {
 
   .photo-band__content {
     padding-bottom: max(4.5rem, calc(2rem + env(safe-area-inset-bottom, 0px)));
+  }
+
+  .photo-band.home-launch-video .photo-band__media video {
+    transform: none;
   }
 
   .photo-band__shade {

@@ -12,6 +12,7 @@ type PhotoBandProps = {
   staticMedia?: boolean
   brand?: string
   objectPosition?: string
+  className?: string
 }
 
 export default function PhotoBand({
@@ -26,10 +27,11 @@ export default function PhotoBand({
   staticMedia = false,
   brand,
   objectPosition,
+  className,
 }: PhotoBandProps) {
   return (
     <section
-      className={`photo-band${align === 'mid' ? ' mid' : ''}${staticMedia ? ' static' : ''}${video ? ' has-video' : ''}`}
+      className={`photo-band${align === 'mid' ? ' mid' : ''}${staticMedia ? ' static' : ''}${video ? ' has-video' : ''}${className ? ` ${className}` : ''}`}
     >
       <div className="photo-band__media">
         {video ? (
