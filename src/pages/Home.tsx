@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PhotoBand from '../components/PhotoBand'
 
 export default function Home() {
@@ -18,9 +19,9 @@ export default function Home() {
       <PhotoBand
         image="/images/rocket-pad.jpg"
         alt="Rocket on the launch pad"
-        title="Competition & high power"
-        subtitle="Two branches. One mission: fly farther and learn more."
-        cta={{ to: '/rockets', label: 'Our rockets' }}
+        title="Three ways to build"
+        subtitle="Competition rockets, high-power certification, and L-RED: our new liquid rocket engine project."
+        cta={{ to: '/about', label: 'Explore the teams' }}
         staticMedia
       />
 
@@ -43,6 +44,13 @@ export default function Home() {
         staticMedia
         objectPosition="center 40%"
       />
+      <section className="dark-section">
+        <div className="content-wrap">
+          <h2 className="display-lg">Beyond the workshop</h2>
+          <p className="body-lead section-cta">From club fairs and outreach to speakers and launch road trips, take a look at last year’s highlights. More exciting events and activities are coming this year.</p>
+          <Link to="/about#events" className="ghost-btn section-cta">Club life & events <span aria-hidden="true">→</span></Link>
+        </div>
+      </section>
     </div>
   )
 }

@@ -25,7 +25,10 @@ npm run preview
 ## Pages
 
 - `/` — Home
-- `/about` — About, teams, leadership
+- `/about` — Teams, competition and HPR leadership, club events
+- `/competition/structures` — Structures goals and photos
+- `/competition/propulsion` — Propulsion goals and photos
+- `/competition/recovionics` — Recovery and avionics goals and photos
 - `/rockets` — Flight heritage
 - `/join` — FAQs
 - `/contact` — Contact form

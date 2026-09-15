@@ -4,16 +4,21 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import Subteam from './pages/Subteam'
 import Rockets from './pages/Rockets'
 import Join from './pages/Join'
 import Contact from './pages/Contact'
 import Donate from './pages/Donate'
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    if (hash) {
+      document.getElementById(hash.slice(1))?.scrollIntoView()
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, hash])
   return null
 }
 
@@ -26,6 +31,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/competition/:slug" element={<Subteam />} />
           <Route path="/rockets" element={<Rockets />} />
           <Route path="/join" element={<Join />} />
           <Route path="/contact" element={<Contact />} />

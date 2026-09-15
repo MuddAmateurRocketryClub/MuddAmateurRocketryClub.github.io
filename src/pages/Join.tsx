@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'What is the time commitment?',
-    a: 'We have weekly 3-hour meetings. As the competition becomes closer, members typically spend more time outside of meetings to build — from about 5 hours a week to 20. The more hours you put in, the more you learn.',
+    a: 'Competition meetings are Sundays, 12–2 PM, with additional work as projects and launch preparations ramp up. HPR is self-paced with weekly Makerspace build sessions. L-RED has weekly meetings and breakout groups, with a larger project commitment similar to competition. Contact us for the HPR interest form, current schedules, and Discord access.',
   },
 ]
 
