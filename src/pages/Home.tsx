@@ -6,7 +6,7 @@ export default function Home() {
     <div className="page">
       <PhotoBand
         video="/videos/apollyon-launch.mp4"
-        poster="/images/launch-poster.jpg"
+        poster="/images/rockets/apollyon-i/onboard-camera-view.jpg"
         alt="Apollyon I launch"
         brand="Mudd Amateur Rocketry Club"
         title="MARC"
@@ -17,8 +17,8 @@ export default function Home() {
       />
 
       <PhotoBand
-        image="/images/rocket-pad.jpg"
-        alt="Rocket on the launch pad"
+        image="/images/club-life/classroom-team-photo.jpg"
+        alt="MARC members posing together in a classroom"
         title="Three ways to build"
         subtitle="Competition rockets, high-power certification, and L-RED: our new liquid rocket engine project."
         cta={{ to: '/about', label: 'Explore the teams' }}
@@ -26,7 +26,7 @@ export default function Home() {
       />
 
       <PhotoBand
-        image="/images/open-to-all.jpg"
+        image="/images/club-life/unicycling-with-rocket.jpg"
         alt="Club member unicycling while carrying a rocket"
         title="Open to all majors"
         subtitle="No prior rocketry experience required. Join at club fair — or anytime."
@@ -36,8 +36,8 @@ export default function Home() {
       />
 
       <PhotoBand
-        image="/images/fuel-flight.jpg"
-        alt="Team working on a rocket in the workshop"
+        image="/images/structures/machining.jpg"
+        alt="MARC members machining a rocket component in the workshop"
         title="Fuel the next flight"
         subtitle="Sponsors keep our motors firing and our payloads flying. Reach out if you want to support the next mission."
         cta={{ to: '/donate', label: 'Donate' }}

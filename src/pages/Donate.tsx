@@ -4,8 +4,8 @@ export default function Donate() {
   return (
     <div className="page">
       <PageHero
-        image="/images/donate-hero.jpg"
-        alt="MARC rocketry team"
+        image="/images/structures/centering-ring-assembly-original.jpg"
+        alt="Team members assembling centering rings around a rocket tube"
         title="Donate"
         subtitle="Help fuel our next journey."
         objectPosition="center 62%"

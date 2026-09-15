@@ -3,9 +3,9 @@ import { subteams } from '../data/subteams'
 import PageHero from '../components/PageHero'
 
 const competitionPhotos = [
-  { src: '/images/competition-1.jpg', alt: 'Competition team at work' },
-  { src: '/images/competition-2.jpg', alt: 'Competition rocket build' },
-  { src: '/images/competition-3.jpg', alt: 'Avionics and transmitter sorting' },
+  { src: '/images/structures/machining.jpg', alt: 'MARC members machining a rocket component' },
+  { src: '/images/propulsion/motor-preparation.jpg', alt: 'Preparing motor components at the workbench' },
+  { src: '/images/recovionics/transmitter-workshop.jpg', alt: 'Sorting transmitters and electronics together' },
 ]
 
 const competitionLeadership = [
@@ -28,8 +28,8 @@ export default function About() {
   return (
     <div className="page">
       <PageHero
-        image="/images/about-hero.jpg"
-        alt="MARC club members"
+        image="/images/structures/airframe-work-on-pvc-stand.jpg"
+        alt="Working on a rocket airframe resting on a padded PVC stand"
         title="About us"
         subtitle="Harvey Mudd’s student rocketry club — technical skills, hard challenges, and teammates for life."
       />
@@ -86,7 +86,7 @@ export default function About() {
               <div className="team-photos team-photos--single">
                 <figure className="team-photos__item">
                   <img
-                    src="/images/hpr-team.jpg"
+                    src="/images/hpr/desert-launch-group-with-rockets.jpg"
                     alt="High-power rocketry team"
                     loading="lazy"
                   />
@@ -163,6 +163,20 @@ export default function About() {
               <h3>Road trips & good company</h3>
               <p>We headed to the desert for L1 launches, cheered on teammates, and shared In-N-Out stops along the way.</p>
             </article>
+          </div>
+          <div className="event-highlight">
+            <h3 className="section-head">A conversation with Sandor Nemethy</h3>
+            <p className="body-lead">A look back at last year’s speaker event with the Apple satellite engineer, from the discussion to a group photo with the club.</p>
+            <div className="subteam-gallery event-gallery">
+              <figure>
+                <img src="/images/events/sandor-nemethy/discussion.jpg" alt="Sandor Nemethy and two student hosts in conversation on stage" width="1600" height="1200" loading="lazy" />
+                <figcaption>Talking satellite systems, launch, and operations with Sandor Nemethy.</figcaption>
+              </figure>
+              <figure>
+                <img src="/images/events/sandor-nemethy/group-photo.jpg" alt="Sandor Nemethy and MARC members posing together in the auditorium" width="1600" height="1200" loading="lazy" />
+                <figcaption>The club together after the speaker event.</figcaption>
+              </figure>
+            </div>
           </div>
           <Link to="/join" className="ghost-btn section-cta">Join the club <span aria-hidden="true">→</span></Link>
         </div>

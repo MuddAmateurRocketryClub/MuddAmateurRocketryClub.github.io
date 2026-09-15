@@ -695,14 +695,6 @@ ol {
   margin-bottom: 0.75rem;
 }
 
-.subsys ul li {
-  font-size: 0.875rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--spectral-mute);
-  line-height: 1.8;
-}
-
 .leadership-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -962,11 +954,36 @@ a:focus-visible {
 #events { scroll-margin-top: var(--nav-height); }
 
 .subteam-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
   border: 1px solid var(--hairline);
   transition: background 0.2s, border-color 0.2s;
 }
+
+.subteam-link h3 {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-bottom: 1.25rem;
+}
+
+.subteam-link ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.subteam-link li {
+  font-size: 1rem;
+  line-height: 1.65;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #e0e0e8;
+}
+
+.subteam-link li + li { margin-top: 0.75rem; }
 
 .subteam-link:hover {
   background: var(--ghost-surface);
@@ -980,7 +997,12 @@ a:focus-visible {
   padding-block: 0.5rem;
 }
 
-.subteam-link .text-link { margin-top: 1.25rem; }
+.subteam-link .text-link {
+  align-self: flex-start;
+  margin-top: auto;
+  font-size: 1rem;
+  font-weight: 500;
+}
 .section-cta { margin-top: 2rem; }
 .event-grid p { color: var(--spectral-mute); line-height: 1.8; }
 
@@ -1002,7 +1024,8 @@ a:focus-visible {
 .goal-list li:last-child { border-bottom: 1px solid var(--hairline); }
 .goal-list .micro { color: var(--spectral-mute); }
 .subteam-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.subteam-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.subteam-gallery { align-items: start; }
+.subteam-gallery img { width: 100%; height: auto; }
 .subteam-gallery figcaption { color: var(--spectral-mute); font-size: 0.8125rem; margin-top: 0.75rem; }
 .subteam-next { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; align-items: center; margin-top: 3rem; }
 .subteam-nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
@@ -1015,3 +1038,7 @@ a:focus-visible {
 @media (max-width: 768px) {
   .event-grid { grid-template-columns: 1fr; }
 }
+
+.event-highlight { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--hairline); }
+.event-highlight .body-lead { margin-top: 1rem; }
+.event-gallery { margin-top: 1.5rem; }

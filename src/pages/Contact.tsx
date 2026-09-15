@@ -27,7 +27,7 @@ export default function Contact() {
   return (
     <div className="page">
       <PageHero
-        image="/images/contact-hero.jpg"
+        image="/images/hpr/desert-rocket-liftoff.jpg"
         alt="Rocket launching over the desert"
         title="Contact"
         subtitle="We are always open to new members joining."

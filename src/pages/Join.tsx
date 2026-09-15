@@ -20,8 +20,8 @@ export default function Join() {
   return (
     <div className="page">
       <PageHero
-        image="/images/join-hero.jpg"
-        alt="MARC club members outdoors"
+        image="/images/club-life/rocket-shaped-name-tag-display.jpg"
+        alt="A rocket-shaped display covered with club members’ name tags"
         title="Join"
         subtitle="No experience required. Just show up ready to build."
         objectPosition="center 30%"

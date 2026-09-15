@@ -31,7 +31,7 @@ export default function Nav() {
   return (
     <header className={`nav${scrolled || open ? ' scrolled' : ''}`}>
       <Link to="/" className="nav__brand" onClick={() => setOpen(false)}>
-        <img src="/images/marc-logo.png" alt="" className="nav__logo" />
+        <img src="/images/branding/marc-logo.png" alt="" className="nav__logo" />
         <span>MARC</span>
       </Link>
 

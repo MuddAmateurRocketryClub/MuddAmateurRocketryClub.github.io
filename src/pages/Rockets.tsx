@@ -5,7 +5,7 @@ const rockets = [
     year: '2025–2026',
     name: 'Apollyon I',
     status: 'Won 1st at FAR Unlimited 2026',
-    image: '/images/rocket-apollyon.jpg',
+    image: '/images/rockets/apollyon-i/team-with-rocket.jpg',
     specs: [
       'Target altitude: 12,000 ft',
       'Single stage, dual deployment',
@@ -20,19 +20,19 @@ const rockets = [
     year: '2024–2025',
     name: 'Gladius III',
     status: 'Won 3rd at FAR Unlimited 2025',
-    image: '/images/rocket-gladius-iii.jpg',
+    image: '/images/rockets/gladius-iii/airframe-lettering-closeup.jpg',
     specs: ['Successful recovery'],
   },
   {
     year: '2023–2024',
     name: 'Gladius II',
-    image: '/images/rocket-gladius-ii.jpg',
+    image: '/images/rockets/gladius-ii/rocket-on-desert-stands.jpg',
     specs: ['Fin shred'],
   },
   {
     year: '2022–2023',
     name: 'Gladius I',
-    image: '/images/rocket-gladius-i.jpg',
+    image: '/images/rockets/gladius-i/team-carrying-rocket.jpg',
     specs: ['Premature separation'],
   },
 ]
@@ -41,8 +41,8 @@ export default function Rockets() {
   return (
     <div className="page">
       <PageHero
-        image="/images/rockets-hero.jpg"
-        alt="Team members working on a rocket"
+        image="/images/structures/routing-airframe-with-jig.jpg"
+        alt="Team members using a router and jig on a rocket airframe"
         title="Rockets"
         subtitle="Flight heritage from Gladius to Apollyon."
         objectPosition="center 45%"
