@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import PageHero from '../components/PageHero'
+import InstagramPreview from '../components/InstagramPreview'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
@@ -87,6 +88,7 @@ export default function Contact() {
               )}
             </form>
           </div>
+          <InstagramPreview />
         </div>
       </section>
     </div>

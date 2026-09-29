@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PhotoBand from '../components/PhotoBand'
+import InstagramPreview from '../components/InstagramPreview'
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
           <h2 className="display-lg">Beyond the workshop</h2>
           <p className="body-lead section-cta">From club fairs and outreach to speakers and launch road trips, take a look at last year’s highlights. More exciting events and activities are coming this year.</p>
           <Link to="/about#events" className="ghost-btn section-cta">Club life & events <span aria-hidden="true">→</span></Link>
+          <InstagramPreview />
         </div>
       </section>
     </div>
