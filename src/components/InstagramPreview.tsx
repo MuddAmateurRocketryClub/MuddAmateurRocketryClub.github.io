@@ -1,4 +1,4 @@
-const instagramUrl = 'https://www.instagram.com/hmc_marc/'
+const instagramUrl = 'https://www.instagram.com/hmcmarc/'
 
 export default function InstagramPreview() {
   return (
@@ -8,7 +8,7 @@ export default function InstagramPreview() {
         href={instagramUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Visit @hmc_marc on Instagram (opens in a new tab)"
+        aria-label="Visit @hmcmarc on Instagram (opens in a new tab)"
       >
         <img
           src="/images/club-life/competition-team-2026-2027.jpg"
@@ -20,14 +20,14 @@ export default function InstagramPreview() {
       </a>
       <div className="instagram-preview__content">
         <p className="micro">Follow along on Instagram</p>
-        <h3 className="display-lg">@hmc_marc</h3>
+        <h3 className="display-lg">@hmcmarc</h3>
         <p className="body-lead">See more of club life, rocket builds, and launch days.</p>
         <a
           className="ghost-btn"
           href={instagramUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="View @hmc_marc on Instagram (opens in a new tab)"
+          aria-label="View @hmcmarc on Instagram (opens in a new tab)"
         >
           View on Instagram <span aria-hidden="true">↗</span>
         </a>
