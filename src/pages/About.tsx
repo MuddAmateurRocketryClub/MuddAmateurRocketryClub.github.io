@@ -28,10 +28,11 @@ export default function About() {
   return (
     <div className="page">
       <PageHero
-        image="/images/structures/airframe-work-on-pvc-stand.jpg"
-        alt="Working on a rocket airframe resting on a padded PVC stand"
+        image="/images/club-life/competition-team-2026-2027.jpg"
+        alt="MARC’s 2026–2027 competition team posing together in a classroom"
         title="About us"
         subtitle="Harvey Mudd’s student rocketry club — technical skills, hard challenges, and teammates for life."
+        objectPosition="center 60%"
       />
 
       <section className="dark-section">

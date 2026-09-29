@@ -17,12 +17,13 @@ export default function Home() {
       />
 
       <PhotoBand
-        image="/images/club-life/classroom-team-photo.jpg"
-        alt="MARC members posing together in a classroom"
+        image="/images/club-life/competition-team-2026-2027.jpg"
+        alt="MARC’s 2026–2027 competition team posing together in a classroom"
         title="Three ways to build"
         subtitle="Competition rockets, high-power certification, and L-RED: our new liquid rocket engine project."
         cta={{ to: '/about', label: 'Explore the teams' }}
         staticMedia
+        objectPosition="center 60%"
       />
 
       <PhotoBand
